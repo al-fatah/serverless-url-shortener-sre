@@ -25,4 +25,8 @@ module "lambdas" {
   region         = var.region
   ddb_table_name = module.dynamodb.table_name
   ddb_table_arn  = module.dynamodb.table_arn
+
+  create_zip_path   = "${path.module}/artifacts/create-url-lambda.zip"
+  retrieve_zip_path = "${path.module}/artifacts/retrieve-url-lambda.zip"
+  app_url           = var.app_url
 }

@@ -9,3 +9,11 @@ output "create_role_arn" {
 output "retrieve_role_arn" {
   value = module.lambdas.retrieve_role_arn
 }
+
+output "create_lambda_arn" {
+  value = module.lambdas.create_lambda_arn
+}
+
+output "retrieve_lambda_arn" {
+  value = module.lambdas.retrieve_lambda_arn
+}
