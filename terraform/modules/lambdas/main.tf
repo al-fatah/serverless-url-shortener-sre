@@ -9,11 +9,11 @@ resource "aws_lambda_function" "create" {
 
   environment {
     variables = {
-      APP_URL     = var.app_url
-      REGION_AWS  = var.region
-      DB_NAME     = var.ddb_table_name
-      MIN_CHAR    = "12"
-      MAX_CHAR    = "16"
+      APP_URL    = var.app_url
+      REGION_AWS = var.region
+      DB_NAME    = var.ddb_table_name
+      MIN_CHAR   = "12"
+      MAX_CHAR   = "16"
     }
   }
 

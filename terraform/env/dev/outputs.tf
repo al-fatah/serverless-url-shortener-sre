@@ -33,3 +33,7 @@ output "waf_web_acl_arn" {
 output "waf_log_group_name" {
   value = module.waf.waf_log_group_name
 }
+
+output "sns_alerts_topic_arn" {
+  value = module.observability.sns_topic_arn
+}

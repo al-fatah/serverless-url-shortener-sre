@@ -9,3 +9,7 @@ output "invoke_url" {
 output "stage_name" {
   value = aws_api_gateway_stage.dev.stage_name
 }
+
+output "rest_api_name" {
+  value = aws_api_gateway_rest_api.this.name
+}

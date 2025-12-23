@@ -47,6 +47,18 @@ module "apigw" {
   retrieve_lambda_invoke_arn = module.lambdas.retrieve_lambda_invoke_arn
 }
 
+module "observability" {
+  source = "../../modules/observability"
+
+  project_name = var.project_name
+
+  create_lambda_function_name   = "${var.project_name}-create"
+  retrieve_lambda_function_name = "${var.project_name}-retrieve"
+
+  apigw_api_name   = module.apigw.rest_api_name
+  apigw_stage_name = module.apigw.stage_name
+}
+
 # -----------------------
 # Custom domain (optional)
 # -----------------------
