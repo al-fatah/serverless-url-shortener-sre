@@ -1,0 +1,6 @@
+region            = "us-east-1"
+project_name       = "urlshortener-dev"
+ddb_table_name     = "urlshortener-dev-links"
+
+custom_domain_name = ""
+hosted_zone_id     = "Z00541411T1NGPV97B5C0"
