@@ -7,7 +7,14 @@ __pycache__/
 .terraform/
 *.tfstate
 *.tfstate.backup
-.crash.log
+terraform.tfstate*
+crash.log
 
 # Environment
 .env
+
+# Lambda build artifacts
+terraform/env/*/artifacts/*.zip
+
+# tfvars (often contains environment values)
+terraform/env/*/terraform.tfvars
