@@ -6,7 +6,7 @@ This project demonstrates how to design, deploy, and operate a real-world cloud 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Serverless architecture** using API Gateway, AWS Lambda, and DynamoDB
 - **Custom domain** with HTTPS (ACM + Route53)
@@ -19,7 +19,7 @@ This project demonstrates how to design, deploy, and operate a real-world cloud 
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 **Flow**
 1. Client calls `POST /newurl`
@@ -42,7 +42,7 @@ This project demonstrates how to design, deploy, and operate a real-world cloud 
 
 ---
 
-## 🔐 Security Design
+## Security Design
 
 - **WAF IP Allowlist**
   - Default action: **BLOCK**
@@ -60,7 +60,7 @@ This project demonstrates how to design, deploy, and operate a real-world cloud 
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Create Short URL
 ```
@@ -99,7 +99,7 @@ Location: https://openai.com
 
 ---
 
-## 📊 Observability & Monitoring
+## Observability & Monitoring
 
 - **X-Ray**
   - Enabled on API Gateway stage
@@ -114,7 +114,7 @@ Location: https://openai.com
 
 ---
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 ### Continuous Integration (CI)
 Triggered on pull requests:
@@ -131,7 +131,7 @@ Triggered manually or on merge:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -156,7 +156,7 @@ Triggered manually or on merge:
 
 ---
 
-## 🧪 Local Development
+## Local Development
 
 ### Package Lambdas
 ```bash
@@ -174,7 +174,7 @@ terraform apply
 
 ---
 
-## 🛣️ Roadmap / Improvements
+## Roadmap / Improvements
 
 - Rate limiting per IP
 - Custom short aliases
@@ -185,7 +185,7 @@ terraform apply
 
 ---
 
-## 🎯 Why This Project Matters
+## Why This Project Matters
 
 This project is intentionally built to reflect **real-world cloud engineering practices**, including:
 
@@ -199,7 +199,7 @@ It demonstrates not just *how to build*, but *how to operate* a cloud-native ser
 
 ---
 
-## 👤 Author
+## Author
 
 Built by **Alfatah Jalalludin**  
 Cloud / DevOps / SRE-focused engineer
